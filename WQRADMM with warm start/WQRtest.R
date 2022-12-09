@@ -54,7 +54,6 @@ e = as.vector(t(e%*%chol(cov_e)))
 sigma = 0.5
 e = sigma*e
 beta0 = -1000
-#beta0 = rnorm(1)
 beta = rnorm(p)
 Y = beta0+X%*%beta+apply(X[,1:d]*e/d, 1, sum)
 beta_true = c(beta0, quantile(e/d, tau)+beta[1:d], beta[(d+1):p])
