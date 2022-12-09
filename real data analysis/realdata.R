@@ -11,7 +11,7 @@ library(WQRADMM)
 #install_github("https://github.com/nanlin999/WQRADMMmac", force = TRUE)
 
 ###read data from .csv file
-realdata = read.table("realdata.csv", sep=',', header = TRUE)
+realdata = read.table("realdata.csv", sep=',', header = TRUE)  ###please put the .csv file directory into the double quotation marks
 realdata = as.matrix(realdata)
 NSUM = dim(realdata)[1]
 p = 26
