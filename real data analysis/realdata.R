@@ -7,6 +7,8 @@ install.packages("devtools")
 library(devtools)
 install_github("https://github.com/nanlin999/WQRADMM", force = TRUE)
 library(WQRADMM)
+#Note:
+#please update your cpp to version 1.0.9 before installing the WQRADMM package
 #for macOS users, use the following code to install the WQRADMM package
 #install_github("https://github.com/nanlin999/WQRADMMmac", force = TRUE)
 
